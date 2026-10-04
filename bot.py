@@ -275,15 +275,10 @@ async def health(request):
 # --------------------------------------------------
 
 async def startup(app):
-
     logging.info("Запуск бота...")
-
-    await bot.delete_webhook(
-        drop_pending_updates=False
-    )
-
     await bot.set_webhook(
-        url=WEBHOOK_URL
+        url=WEBHOOK_URL,
+        allowed_updates=["message"]
     )
 
     logging.info(
