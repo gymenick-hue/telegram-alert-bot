@@ -10,7 +10,7 @@ from aiogram.types import Message
 TOKEN = os.environ["BOT_TOKEN"]
 PORT = int(os.environ.get("PORT", "10000"))
 
-BASE_URL = "https://telegram-alert-bot-y4xg.onrender.com"
+BASE_URL = "https://telegram-alert-bot-1-yo3t.onrender.com"
 WEBHOOK_PATH = "/telegram-webhook"
 WEBHOOK_URL = BASE_URL + WEBHOOK_PATH
 
