@@ -304,8 +304,6 @@ async def cleanup(app):
 
     app["alert_task"].cancel()
 
-    await bot.delete_webhook()
-
     await bot.session.close()
 
 
