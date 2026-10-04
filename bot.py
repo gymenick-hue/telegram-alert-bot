@@ -36,7 +36,17 @@ async def handle_message(message: Message):
             "🟢 Відбій"
         )
 
-
+    elif message.text and message.text.startswith("/test"):
+        await message.answer(
+            "🧪 ТЕСТОВЕ ПОВІДОМЛЕННЯ\n\n"
+            "🚨 Повітряна тривога\n"
+            "🛩️ БПЛА\n"
+            "🚀 Ракета\n"
+            "💥 Балістика\n"
+            "✈️ Авіація\n"
+            "💣 КАБ\n"
+            "🟢 Відбій"
+        )
 async def send_to_all(text):
     for chat_id in list(subscribers):
         try:
